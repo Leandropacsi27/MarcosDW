@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      aria-label="Second navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Biblioteca Digital</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample02"
+          aria-controls="navbarsExample02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+
+          <!-- Botones de usuario -->
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-outline-light">Iniciar Sesión</a>
+            <a href="./registro.html" class="btn btn-warning">Registrarse</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <h2>Agendar Cita</h2>
+      <form>
+        <!-- Nombre -->
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre Completo</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            placeholder="Ingresa tu nombre completo"
+            required
+          />
+        </div>
+
+        <!-- Correo -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="ejemplo@correo.com"
+            required
+          />
+        </div>
+
+        <!-- Teléfono -->
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="telefono"
+            placeholder="+51 999 999 999"
+            required
+          />
+        </div>
+
+        <!-- Especialidad -->
+        <div class="mb-3">
+          <label for="especialidad" class="form-label">Especialidad</label>
+          <select class="form-select" id="especialidad" required>
+            <option value="">Seleccione una especialidad...</option>
+            <option value="medicina">Medicina General</option>
+            <option value="odontologia">Odontología</option>
+            <option value="psicologia">Psicología</option>
+            <option value="nutricion">Nutrición</option>
+          </select>
+        </div>
+
+        <!-- Fecha -->
+        <div class="mb-3">
+          <label for="fecha" class="form-label">Fecha de la Cita</label>
+          <input type="date" class="form-control" id="fecha" required />
+        </div>
+
+        <!-- Hora -->
+        <div class="mb-3">
+          <label for="hora" class="form-label">Hora de la Cita</label>
+          <input type="time" class="form-control" id="hora" required />
+        </div>
+
+        <!-- Botón -->
+        <button type="submit" class="btn btn-success">Agendar Cita</button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
