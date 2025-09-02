@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Citas Médicas</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample02"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#especialidades"></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"></a></li>
+          </ul>
+
+          <div class="d-flex gap-2">
+            <a href="./iniciar.html" class="btn btn-outline-light"
+              >Iniciar Sesión</a
+            >
+            <a href="./registrarse.html" class="btn btn-warning">Registrarse</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5" id="register">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="text-center mb-4">Registrarse</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="registerName" class="form-label"
+                    >Nombre Completo</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="registerName"
+                    placeholder="Juan Pérez"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="registerEmail" class="form-label"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="registerEmail"
+                    placeholder="ejemplo@email.com"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="registerPassword" class="form-label"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="registerPassword"
+                    placeholder="********"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="registerConfirm" class="form-label"
+                    >Confirmar Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="registerConfirm"
+                    placeholder="********"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-success w-100">
+                  Crear Cuenta
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-light pt-4 mt-5 fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <!-- Información -->
+          <div class="col-md-6 mb-3">
+            <h5>Citas Médicas</h5>
+            <p>
+              Agenda tus citas de manera rápida y sencilla. Cuidamos tu salud
+              con la mejor atención.
+            </p>
+          </div>
+
+          <!-- Redes Sociales -->
+          <div class="col-md-6 mb-3 text-md-end">
+            <h6>Síguenos</h6>
+            <div class="d-flex justify-content-md-end gap-3 fs-4">
+              <a href="#" class="text-primary"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-info"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-primary"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-success"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-light" />
+
+        <!-- Derechos -->
+        <div class="text-center py-3">
+          <p class="mb-0">
+            &copy; 2025 Citas Médicas. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <a
+      href="#"
+      class="btn btn-primary rounded-circle position-fixed"
+      style="
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </body>
+</html>
