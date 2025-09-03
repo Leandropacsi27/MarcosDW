@@ -14,7 +14,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
+
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Citas Médicas</a>
@@ -46,6 +48,8 @@
         </div>
       </div>
     </nav>
+
+    
 
     <!-- Hero Section -->
     <section class="bg-light py-5 text-center">
@@ -94,6 +98,125 @@
         </div>
       </div>
     </section>
+
+    <!-- carrusel -->
+    <div class="container mt-5">
+      <div
+        id="miCarrusel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <img
+              src="https://img.freepik.com/vector-gratis/plantilla-banner-centro-medico-diseno-plano_23-2150080711.jpg?semt=ais_hybrid&w=740&q=80"
+              class="d-block w-100"
+              alt="Imagen 1"
+            />
+            <p class="nombre-chic"></p>
+          </div>
+          <div class="carousel-item text-center">
+            <img
+              src="https://img.freepik.com/vector-gratis/plantilla-banner-centro-medico-diseno-plano_23-2150080735.jpg"
+              class="d-block w-100"
+              alt="Imagen 2"
+            />
+            <p class="nombre-chic"></p>
+          </div>
+          <div class="carousel-item text-center">
+            <img
+              src="https://img.freepik.com/vector-gratis/banner-venta-clinica-medica-degradado_23-2149645554.jpg"
+              class="d-block w-100"
+              alt="Imagen 3"
+            />
+            <p class="nombre-chic"></p>
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#miCarrusel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#miCarrusel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#miCarrusel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#miCarrusel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#miCarrusel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      /* Ajustar tamaño fijo del carrusel y recortar imágenes */
+      .carousel-item img {
+        height: 300px; /* altura fija */
+        object-fit: contain; /* recorta sin deformar */
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: lightblue; /* Cambia el color de fondo */
+        border-radius: 100%; /* Opcional: forma circular */
+        background-size: 50%; /* Tamaño del icono interno */
+      }
+      .carousel-item {
+        transition: transform 2s ease-in-out; /* velocidad y suavidad */
+      }
+      .carousel-item p {
+        color: lightblue; /* si el fondo es oscuro */
+        font-weight: bold;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 40px;
+      }
+      .nombre-chic {
+        font-family: "Great Vibes", cursive;
+        font-size: 2rem;
+        color: lightblue; /* rosa */
+      }
+      /* Indicadores por defecto */
+      .carousel-indicators button {
+        background-color: lightblue; /* Color base */
+        border-radius: 50%; /* Que sean redondos */
+        width: 12px; /* Tamaño */
+        height: 12px;
+      }
+
+      /* Indicador activo */
+      .carousel-indicators .active {
+        background-color: lightblue; /* Color del activo */
+      }
+    </style>
 
     <!-- Especialidades -->
     <section class="py-5" id="especialidades">
@@ -205,8 +328,10 @@
       </div>
     </section>
 
+    
+
     <!-- Footer -->
-    <footer class="bg-dark text-light pt-4 mt-5">
+    <footer class="bg-dark text-light pt-4 mt-auto">
       <div class="container">
         <div class="row">
           <!-- Información -->
